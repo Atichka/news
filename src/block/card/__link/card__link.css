@@ -1,0 +1,15 @@
+.card__link {
+  margin: 0;
+
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+
+	display: flex;
+  align-items: center;
+  text-decoration: none;
+
+	color: rgb(70, 91, 255);
+}

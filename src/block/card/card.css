@@ -1,0 +1,22 @@
+@import url(./__title/card__title.css);
+@import url(./__autor/card__autor.css);
+@import url(./__data-time/card__data-time.css);
+@import url(./__link/card__link.css);
+@import url(./__status/card__status.css);
+
+.card {
+	/* border: 1px solid red; */
+	display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  background: rgb(153, 152, 152);
+  border-radius: 16px;
+
+  cursor: pointer;
+}
+
+.card:hover {
+	transition: opacity 0.3s;
+	opacity: 0.8;
+}
