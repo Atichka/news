@@ -6,9 +6,14 @@
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
     <link rel="icon" href="<%=require('./images/favicon.ico')%>" type="image/x-icon">
 </head>
+
 <body>
   <div class="page">
-    <div class="card-list">
+    <div class="message">
+      <button class="message__button"><img class="message__pic" src="<%=require('./images/message.ico')%>"></button>
+      <p class="message__value">30</p>
+    </div>
+    <div class="card-list card-list__hide">
       <div class="card">
         <h2 class="card__title">Европа запустит в космос гигантскую «Клешню» для охоты на мертвые спутники</h3>
         <p class="card__autor">Александр Мартыненко</p>
@@ -34,4 +39,5 @@
   </div>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
+
 </html>
