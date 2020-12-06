@@ -10,11 +10,12 @@ class Card {
     <h2 class="card__title">${titleValue}</h3>
     <p class="card__autor">${autorValue}</p>
     <p class="card__data-time">${dataTimeValue}</p>
-    <a href=${linkValue} class="card__link">Подробнее...</a>
+    <a href=${linkValue} onclick="updateStatus(); return false;"class="card__link">Подробнее...</a>
     <p class="card__status">${statusValue}</p>
   </div>`)
     return element;
   }
+
 }
 
 class CardList {
@@ -46,13 +47,14 @@ class CardList {
 const messageButton = document.querySelector('.message__button');
 const cardList = document.querySelector('.card-list');
 const messageValue = document.querySelector('.message__value');
+const container = document.querySelector('.container');
 const cardListObj = new CardList(document.querySelector('.card-list'));
-const card = new Card();
 
 messageButton.addEventListener('click', visibleMessage);
 
 function visibleMessage () {
-  cardList.classList.toggle('card-list__hide');
+  cardList.classList.toggle('hide');
+  container.classList.toggle('hide');
 }
 
 window.addEventListener('load',function()

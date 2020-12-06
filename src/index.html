@@ -7,34 +7,22 @@
     <link rel="icon" href="<%=require('./images/favicon.ico')%>" type="image/x-icon">
 </head>
 
-<body>
+<body class="body">
   <div class="page">
+    <div class="container">
+      <p class="paragraph">Для загрузки новостей нажми кнопку</p>
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
     <div class="message">
       <button class="message__button"><img class="message__pic" src="<%=require('./images/message.ico')%>"></button>
       <p class="message__value"></p>
     </div>
-    <div class="card-list card-list__hide">
-      <!-- <div class="card">
-        <h2 class="card__title">Европа запустит в космос гигантскую «Клешню» для охоты на мертвые спутники</h3>
-        <p class="card__autor">Александр Мартыненко</p>
-        <p class="card__data-time">02.12.2020 14:49</p>
-        <a href="https://www.techcult.ru/space/9093-evropa-zapustit-v-kosmos-gigantskuyu-kleshnyu" class="card__link">Подробнее...</a>
-        <p class="card__status">Не прочитано</p>
-      </div>
-      <div class="card">
-        <h2 class="card__title">Европа запустит в космос гигантскую «Клешню» для охоты на мертвые спутники</h3>
-        <p class="card__autor">Александр Мартыненко</p>
-        <p class="card__data-time">02.12.2020 14:49</p>
-        <a href="https://www.techcult.ru/space/9093-evropa-zapustit-v-kosmos-gigantskuyu-kleshnyu" class="card__link">Подробнее...</a>
-        <p class="card__status">Не прочитано</p>
-      </div>
-      <div class="card">
-        <h2 class="card__title">Европа запустит в космос гигантскую «Клешню» для охоты на мертвые спутники</h3>
-        <p class="card__autor">Александр Мартыненко</p>
-        <p class="card__data-time">02.12.2020 14:49</p>
-        <a href="https://www.techcult.ru/space/9093-evropa-zapustit-v-kosmos-gigantskuyu-kleshnyu" class="card__link">Подробнее...</a>
-        <p class="card__status">Не прочитано</p>
-      </div> -->
+    <div class="card-list hide">
+
     </div>
   </div>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
