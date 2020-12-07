@@ -60,7 +60,12 @@ function visibleMessage () {
 
 window.addEventListener('load',function()
 {
-  fetch('../news.json')
+  fetch('../news.json', {
+    headers : {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+     }
+  })
   .then(response => response.json())
   .then((obj) => {
     return cardListObj.render(obj);
