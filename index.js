@@ -60,7 +60,7 @@ function visibleMessage () {
 
 window.addEventListener('load',function()
 {
-  fetch('./newsList.json').then(response => {
+  fetch('./news.json').then(response => {
     console.log(response);
     return response.json();
   }).then(data => {
