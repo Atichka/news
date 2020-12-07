@@ -49,7 +49,7 @@ const messageButton = document.querySelector('.message__button');
 const cardList = document.querySelector('.card-list');
 const messageValue = document.querySelector('.message__value');
 const container = document.querySelector('.container');
-const cardListObj = new CardList(document.querySelector('.card-list'));
+const cardListObj = new CardList(document.getElementById('id-card-list'));
 
 messageButton.addEventListener('click', visibleMessage);
 
