@@ -24,6 +24,7 @@ class CardList {
   }
 
   render(cards) {
+    messageValue.textContent = Object.keys(cards).length;
     cards.forEach(element => {
       console.log(element);
       this.addCard(element.title,
@@ -59,10 +60,9 @@ function visibleMessage () {
 
 window.addEventListener('load',function()
 {
-  fetch('./news.json')
+  fetch('../news.json')
   .then(response => response.json())
   .then((obj) => {
-    messageValue.textContent = Object.keys(obj).length;
     return cardListObj.render(obj);
   })
 })
